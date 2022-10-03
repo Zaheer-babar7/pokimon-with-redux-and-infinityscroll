@@ -4,7 +4,7 @@ const initialState = {
 
 export const productReducers = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_ALL_PRODUCTS':
+    case 'FETCH_PRODUCTS':
       return {
         ...state, 
         products: action.products
