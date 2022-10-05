@@ -12,61 +12,119 @@ code {
     monospace;
 }
 
-.header{
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.header {
+  background: black;
+  color: white;
+  font-size: 34px;
   padding: 13px;
   text-align: center;
   font-weight: 700;
-
 }
 
-.card{
-  width: 232px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.image{
+.image {
+  width: 80%;
+  border-bottom: 2px solid black;
+}
+
+.image img {
   width: 100%;
-  border: 1px solid;
 }
 
-.image img{
+.content {
   width: 100%;
+  padding: 10px 0;
 }
 
-.content h1{
-  padding: 1px;
+.content h1 {
+  color: black;
+  padding: 11px;
   margin: 4px;
-  font-size: 15px;
+  font-size: 20px;
+  background: yellow;
+  border-radius: 16px;
+  text-decoration: none;
 }
 
-.content p{
+.content p {
   padding: 3px 10px 10px 9px;
   margin: 0;
 }
 
-.list{
-    display: flex;
-    gap: 44px;
-    flex-direction: column;
-    align-items: center;
+.list {
+  display: grid;
+  gap: 44px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.productCard{
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 68px;
-  padding: 31px;
+.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 72px);
+  width: 100%;
+  background: linear-gradient(to right, #ddd6f3, #faaca8);
+
 }
 
-.productImage{
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 280px;
+}
+
+.pokimonCard {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #1CD8D2, #93EDC7);
+  border-radius: 10px;
+}
+
+.pokimonContent {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.pokimonContent p{
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid black
+}
+
+.pokimonImage {
+  width: 90%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  background: linear-gradient(to right, #1CD8D2, #93EDC7);
 }
 
-.productImage img{
-  width: 100%
+.pokimonImage img {
+  width: 100%;
 }
-
-.productContent {
-  padding: 46px;
+.grid-item a{
+  text-decoration: none;
 }

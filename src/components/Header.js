@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
     <div className='header'>
-      React Redux Thunk Axios Router 
+      Pokimon
     </div>
     <Outlet />
     </>

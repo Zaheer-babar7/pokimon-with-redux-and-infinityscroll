@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import {productReducers, selectedproductReducers} from './productReducers';
+import {pokimonReducers, selectedPokimonReducers} from './pokimonReducers';
 
 const rootReducers = combineReducers({
-    productReducers,
-    selectedproductReducers
+    pokimonReducers,
+    selectedPokimonReducers
 });
 
 export default rootReducers;
